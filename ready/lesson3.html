@@ -1,0 +1,323 @@
+<!Doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+
+    <script src="https://ajax.googleapis.com./ajax/libs/jquery/1.12.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="jquery-ui-1.12.1.custom/jquery-ui-1.12.1.custom/jquery-ui.css">
+    <script src="jquery-ui-1.12.1.custom/jquery-ui-1.12.1.custom/jquery-ui.js"></script>
+
+    <!--<link rel="stylesheet" href="https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+    <link rel="stylesheet" href="https://jqueryui.com/resources/demos/style.css">
+
+    <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>-->
+
+    <script>
+        $(document).ready(function () {
+            $("#accordion").accordion({ event: "mouseover" });
+            $("#tabs").tabs({ event: "mouseover" });
+        });
+    </script>
+    <script>
+        $(document).ready(function () {
+            $("#tabs").tabs({ event: "mouseover" });
+        });
+    </script>
+
+    <script>
+        $(document).ready(function () {
+            $("#draggable1").draggable({ axis: "x" });
+            $("#draggable2").draggable({ axis: "y" });
+            $("#draggable3").draggable({ revert: true })
+
+        });
+    </script>
+    <style>
+        #draggable1 {
+            width: 150px;
+            height: 150 px;
+            padding: 0.5em;
+        }
+
+        #draggable2 {
+            width: 150px;
+            height: 150 px;
+            padding: 0.5em;
+        }
+
+        #draggable3 {
+            width: 150px;
+            height: 150 px;
+            padding: 0.5em;
+        }
+
+        #draggable4,
+        #droppable4 {
+            width: 150px;
+            height: 150 px;
+            padding: 0.5em;
+        }
+
+        #draggable5,
+        #droppable5 {
+            width: 150px;
+            height: 150 px;
+            padding: 0.5em;
+        }
+
+        #draggable6,
+        #droppable6 {
+            width: 150px;
+            height: 150 px;
+            padding: 0.5em;
+        }
+    </style>
+    <script>
+        $(document).ready(function () {
+            $("#draggable4").draggable();
+            $("#droppable4").droppable({
+                over: function () {
+                    $("#draggable4").css("background-color", "blue");
+                    $("#droppable4").css("background-color", "blue");
+                },
+                drop: function () {
+                    $("#draggable4").css("display", "none");
+                    $("#droppable4").css("background-color", "red");
+                    $("#droppable4").html("Гітара один із струнних інструментів");
+                    alert("З'єднання типів.")
+                }
+            })
+        })
+    </script>
+
+    <script>
+        $(document).ready(function () {
+            $("#draggable5").draggable();
+            $("#droppable5").droppable({
+                over: function () {
+                    $("#draggable5").css("background-color", "yellow");
+                    $("#droppable5").css("background-color", "yellow");
+                },
+                drop: function () {
+                    $("#draggable5").css("display", "none");
+                    $("#droppable5").css("background-color", "green");
+                    $("#droppable5").html("Сопілка є духовим інструментом");
+                    alert("З'єднання типів.")
+                }
+            })
+        })
+    </script>
+
+    <script>
+        $(document).ready(function () {
+            $("#draggable6").draggable();
+            $("#droppable6").droppable({
+                over: function () {
+                    $("#draggable6").css("background-color", "#8318FF");
+                    $("#droppable6").css("background-color", "#8318FF");
+                },
+                drop: function () {
+                    $("#draggable6").css("display", "none");
+                    $("#droppable6").css("background-color", "gray");
+                    $("#droppable6").html("Барабани є ударнімм інструментом");
+                    alert("З'єднання типів.")
+                }
+            })
+        })
+    </script>
+
+    <style>
+        body {
+            background: url(https://funart.pro/uploads/posts/2021-04/1618491900_26-funart_pro-p-oboi-fon-anime-devushki-28.jpg);
+        }
+    </style>
+
+</head>
+
+<body>
+
+    <div id="tabs">
+        <ul>
+            <li> <a href="#tabs-1">Паразит</a></li>
+            <li> <a href="#tabs-2">Агент Времени</a></li>
+            <li> <a href="#tabs-3">Обещанный Неврленд</a></li>
+            <li> <a href="#tabs-4">Вторжение</a></li>
+            <li> <a href="#tabs-5">Владыка</a></li>
+        </ul>
+
+
+        <div id="tabs-1">
+            <p>На минутку задумайтесь, как бы было прекрасно, если в мире не было такого вида как люди. Эх, природа бы
+                занималась своими делами, постоянно все цвело. Но на земле есть люди, алчные и эгоистичные создания,
+                планета увядает. Становится интересно, если сейчас уничтожить человечество, то все изменится или нет?
+                Кажись с такой целью на землю прилетели существа, которые могут завладеть телом человека. В разных
+                уголках мира начали появляться некие существа из космоса. Прилетели они на маленьких шариках, которые
+                похожи на теннисный мячик. Там жили черви. Черви эти искали себе дом, а домом для них было тело
+                здорового человека, где они могли спокойно развиваться. Когда паразит проникал в тело, он старался
+                завладеть мозгом. Только и тут есть неудачники, одного подростка минула такая участь, вместо мозга и
+                тела он отдал только руку. Синдзи, так звали парня, теперь его порука это отдельный организм, которого
+                зовут Правик. Правик удалось узнать много о людях и подружиться с Синдзи, только другие паразиты не были
+                согласны с таким, и попросту кромсали все. Правику оставалось же только защищать Синдзи от других
+                паразитов. Ну а у Синдзи были свои убеждения, он верил, что паразиты эти — зло, которое нужно искоренить
+                с этого мира.
+            </p>
+        </div>
+
+        <div id="tabs-2">
+            <p>Первое правило хорошей командной работы путешественников во времени: «Ничего не менять в прошлых
+                событиях», второе: «Внимательно слушать своего напарника» и самое важное – на все есть всего 12 часов.
+                Это не просто слова, а настоящее руководство для двух парней из маленькой провинциальной фотостудии,
+                которая получила известность в узких кругах благодаря их способностям. Сяоши и Гуан могут использовать
+                фото любой давности и переместить свое сознание в тело человека, сделавшего его, но лишь один раз на
+                снимок. Свой бизнес парни ведут уже очень давно и без каких-либо оплошностей, хоть и постоянно на грани,
+                из-за постоянного давления событий и эмоций тех, в кого они вселяются. Множество маленьких историй жизни
+                людей, которые заказывают их услуги, такие незначительные, но оставляют следы на сердце, абсолютно
+                разного оттенка, новая информация о событиях прошлого и изменения настоящего – из этого и состоит жизнь
+                близких друзей, и ведь кто знает, что еще может случится, если нарушить маленькое правило?</p>
+        </div>
+        <div id="tabs-3">
+            <p>Сирота не может похвалиться тем, что у него лучшая жизнь. Дети, у которых по разных причинах нет
+                родителей, вынуждены находиться в приюте. Очень много людей наслышаны о том, какие жуткие условия в тех
+                самых приютах, как дети страдают, проживая свои дни там. Но ведь есть и другие приюты, там дети не
+                чувствуют себя такими подавленными. Кроме этого, дети жили почти что в идеальных условиях, у них была
+                всегда чистая и белая одежда и куча вкусной еды. Приют назывался « Грэйс Филд», именно он был домом для
+                Эммы. Девочки, которая была весьма любознательной, когда нибудь такое качество может сыграть злую шутку.
+                А смотрителем в приюте была Изабелла. Она была самой милой в приюте, её называли мамой.
+                Она соблюдала все права приюта и требовала этого от детей, главное соблюдать одно условие. Дети не могли
+                выйти за территорию приюта. На улице 2045 год, Эмма и Норман решают нарушить правило. Именно это
+                приводит к тому, что они узнают страшную правду.</p>
+
+
+        </div>
+
+        <div id="tabs-4">
+            <p> Работая частным детективом, главный герой, который имеет немалый опыт работы и помог в открытии
+                множества запутанных дел, в своем населенном пункте, где ведет повседневную жизнь, обнаруживает тело
+                девушки. Ко всему, парню она кажется знакомой, точнее он ее помнит. Девушку зовут Каеру. Но в
+                виртуальном мире ID: Вторжение есть огромное количество плавающих домов. Конечно же, есть и те,
+                которые падают, также из-за этого здесь считают обыденным столкновение масс земли и в качестве этого
+                некоторые структуры поверхности исчезают. Именно это и кажется нашему герою по имени Сакаидо
+                подозрительным, ведь все что тут происходит вызывает у него некие сомнения. Из-за смерти этой, на
+                вид знакомой, девушки у парня появляется желание узнать причину ее смерти и все иные обстоятельства.
+                Также, он желает разобраться и в самом мире, ведь все вещи кажутся на самом деле не такими, какие
+                есть. И вызывают у него немалые сомнения. Со временем парень приходит к некому выводу. Если он
+                разберётся со всеми тайнами этого мира, то и сможет выяснить причину смерти Каеру.</p>
+        </div>
+
+        <div id="tabs-5">
+            <p> Аниме сериал «Владыка» — это история об игровой реальности. Многие люди, не взирая на возраст и род
+                деятельности плотно «подсаживаются» на онлайн-игры, проводят там много времени и проживают выбранным
+                персонажем целую жизнь. Так было и с игрой «Иггдрасиль» отличная графика, продуманный до мелочей сюжет,
+                точнейшая детализация все это сделало игру популярной, а некий Момонг создал в ней сильнейшую гильдию,
+                названную «Эйнз Оул Гаун», вступить туда было практически невозможно потому, что все там было на высшем
+                уровне. Несерьезных детей и подростков, как членов гильдии даже не рассматривали как кандидатов, за их
+                непостоянность и несерьезность. Все, кто принадлежал к их рядам были совершеннолетние имеющие работу и
+                соответственно серьезное отношение к игре, люди. Но не даром говорят, что все в этом мире конечно,
+                закончилась и эта золотая пора, создатели предложили кое-что поновее и по интереснее, сообщили что этот
+                проект будет свернут. «Эйнз Оул Гаун» пришлось распустить и только лидер клана Момонга оставался там до
+                самого конца ожидая с замиранием сердца отключения серверов. Какого же было его удивление, когда после
+                того как было все отключено он просто оказался в игровой реальности, в мире «Иггдрасиль».</p>
+        </div>
+
+        <div id="accordion">
+
+            <h3>Духовні інструме́нти</h3>
+            <div>
+                <p> Духові́ музи́чні інструме́нти — музичні інструменти, що являють собою різні за розмірами та
+                    матеріалом
+                    трубки, в яких внаслідок коливання стовпа повітря, що міститься в них усередині, утворюється звук.
+
+                    Характер звука духових музичних інструментів залежить від форми та обсягу повітря в них, способу
+                    видобування
+                    - вдування повітря в канал інструмента, механізму виникнення коливань та матеріалу, з якого
+                    виготовлено
+                    резонатор. Зміна частоти коливань, а відповідно і висоти звуку інструменту досягається музикантами у
+                    два
+                    способи:
+
+                    збільшуючи або зменшуючи обсяг звучного стовпа повітря за допомогою спеціальних пристосувань —
+                    клапанів,
+                    вентилів, пістонів, куліс, якими музикант керує пальцями;
+                    сильнішим вдуванням розсікаючи стовп повітря на дві, три, чотири й т.д. частини, внаслідок чого
+                    починає
+                    звучати не основний тон, а якась із його верхніх гармонічних складових.</p>
+            </div>
+
+
+            <h3>Струнні інструменти</h3>
+            <div>
+                <p>
+                    Струнні музичні інструменти (від грец. χορδη — струна і грец. φωνη — звук) — група музичних
+                    інструментів, джерелом звуку яких є вібруюча струна, натягнута між двома фіксованими точками. Термін
+                    "струнні інструменти" нерідко розглядають як синонімічний терміну хордофони, що використовується у
+                    класифікації Горнбостеля-Закса. Між тим, немає точної відповідності між цими термінами. Так, сучасні
+                    фортепіано і клавесин відносять до клавішних музичних інструментів, попри їх належність за
+                    класифікацією
+                    Горнбостеля-Закса до групи хордофонів. Крім того класифікація струнних музичних інструментів
+                    зазвичай
+                    здійснюється за принципом виконавства, на відміну від класифікації хордофонів Горнбостеля-Закса, в
+                    основу якої покладено конструктивні особливості інструментів.
+                </p>
+
+            </div>
+
+            <h3>Ударні інструменти</h3>
+
+            <div>
+                <p>Уда́рні музи́чні інструме́нти — музичні інструменти, звук на яких видобувається ударом (руками,
+                    паличками, молоточками і т. д.) по тілу, що стає його джерелом. Найчисленніше і найстародавніше
+                    сімейство серед усіх музичних інструментів. Іноді ударні музичні інструменти називають словом
+                    перку́сія (від англ. percussion).
+
+                    Музикант, що грає на ударних інструментах називається уда́рником або перкусіоні́стом, в рок- та
+                    джазових групах — також бараба́нщиком.</p>
+            </div>
+        </div>
+    </div>
+
+    <div id="draggable1">
+        <img
+            src="data:image/jpeg;base64,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">
+    </div>
+    <div id="draggable2">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSpHzfNTy79HPSXYARZQDp3tZgwGK0WurqFEg&usqp=CAU">
+    </div>
+
+    <div id="draggable3">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSvvYm8ykXK5XqrXEUnaDcwjBCrjRdASBFqqQ&usqp=CAU">
+    </div>
+
+    <p>З'єднайте типи інструментів зі своїми музикальними інструментами </p>
+
+    <div id="draggable4">
+        <p>Струнні</p>
+    </div>
+    <div id="draggable5">
+        <p>Духовні</p>
+    </div>
+
+    <div id="draggable6">
+        <p>Ударні</p>
+    </div>
+
+    <div id="droppable6">
+        <p>Барабани</p>
+    </div>
+
+    <div id="droppable4">
+        <p>Гітара</p>
+    </div>
+
+    <div id="droppable5">
+        <p>Сопілка</p>
+    </div>
+
+
+  
+
+
+</body>
+
+</html>
